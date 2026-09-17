@@ -7,6 +7,7 @@ namespace Lab3
     public class Software : Product
     {
         public Software() { }
+
         public Software(string code, string desc, decimal price, string company) : base(code, desc, price)
         {
             Company = company;

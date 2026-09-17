@@ -34,9 +34,9 @@
             // lstProducts
             // 
             lstProducts.FormattingEnabled = true;
-            lstProducts.Location = new Point(0, 0);
+            lstProducts.Location = new Point(32, 45);
             lstProducts.Name = "lstProducts";
-            lstProducts.Size = new Size(240, 164);
+            lstProducts.Size = new Size(518, 324);
             lstProducts.TabIndex = 0;
             // 
             // Form1
@@ -47,6 +47,7 @@
             Controls.Add(lstProducts);
             Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load;
             ResumeLayout(false);
         }
 

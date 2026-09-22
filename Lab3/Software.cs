@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Lab3
 {
-    public class Software : Product
+    public class Software : Product, IDisplayable
     {
         public Software() { }
 
@@ -17,7 +17,12 @@ namespace Lab3
 
         public override string GetDisplayText(string sep)
         {
-            return base.GetDisplayText(sep) + sep + $"{Company}";
+            return base.GetDisplayText(sep) + sep + Company;
+        }
+
+        public string GetDisplayString(string sep)
+        {
+            return base.GetDisplayText(sep) + sep + Company;
         }
     }
 }

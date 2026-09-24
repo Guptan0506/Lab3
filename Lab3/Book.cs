@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Lab3
 {
-    // Book : Product means that Book class is inheriting from Product class
+    // Book : Product, IDisplayable means that Book class is inheriting from Product class and the IDisplayable interface
     public class Book : Product, IDisplayable
     {
         public string Author { get; set; }
